@@ -1,0 +1,253 @@
+
+/* FONT USADA */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Passion+One&family=Sriracha&display=swap');
+
+
+/* CONFIGURAÇÃO UNIVERSAL DE CSS */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+
+
+/* ESTILIZAÇÃO E CONFIGURAÇÃO DA LOGO */
+.logo h1 {
+    flex-direction: column;
+    line-height: 10px;
+    color: #faa620;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+
+
+/* CONFIGURAÇÃO LADO A LADO DA LOGO E DA NAVBAR */
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #4867aa;
+}
+.logo {
+    flex: 20%;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-top: 1%;
+}
+
+
+
+
+/* CONFIGURAÇÃO PADRÃO DA NAV BAR E DOS ITENS */
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+    margin-top: 1%;
+}
+.menu a {
+    color: #180F4A;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 16px;
+    position: relative;
+    font-weight: bold;
+}
+
+/*.menu a:hover {
+    color: #36c0c0;
+    border-top: 3px solid #180F4A;
+    transition: 0.275s;
+}*/
+
+
+/* ESTILIZAÇÃO DO EFEITO LINHA HORIZONTAL TRANSIÇÃO DOS ITENS DA NAVBAR */
+.menu a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #180F4A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+
+/* ESTILIZAÇÃO DO BOTÃO DE CONTATO DA NAVBAR*/
+#botao {
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+#botao:hover {
+    border: none;
+    background: #5c94b4;
+    color: black;
+}
+
+
+
+/* POSICIONAMENTO LADO A LADO DO TEXTO E IMAGEM */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+
+/* PARÁGRAFOS */
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    margin: 0;
+}
+
+
+
+/* POSICIONAMENTO DA IMAGEM DO ELETRICISTA */
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    margin: 10px;
+}
+
+
+
+/* ESTILIZAÇÃO DO BOTÃO CONTRATE AGORA */
+.contrate {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #180F4A;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.contrate:hover {
+    background-color: #5c94b4;
+    transition: 0.5s;
+    color: black;
+}
+
+
+
+
+/* SPANS DOS NOMES RESIDENCIAIS E ELETRICISTA */
+.span {
+    color: #3a6d8a;
+}
+
+
+
+/* AJUSTES DAS SECTIONS*/
+section {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #8a9edd;
+    display: inline-block;
+    margin-top: 100px;
+    border: 2px solid #4867aa;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+    width: 90%;
+    border-radius: 30px 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #180F4A; 
+}
+section h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+.card {
+    display: inline-block;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.font-lorem {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* Efeito Hover nos Cards */
+.card:hover {
+    background-color: #180F4A;
+    color: white;
+    transition: 0.5s;
+    padding: 30px
+}
+
+
+
+    
+/* FOOTER */
+.conteiner {
+    background-color: #d1e1e9b6;
+    margin-top: 20px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.conteiner p {
+    color: #180F4A;
+    font-weight: bold;
+    padding: 20px;
+}
+.creator {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #faa620;
+}
+.creator:hover {
+    text-decoration: underline;
+}
+
+
+
+
